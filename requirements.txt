@@ -1,0 +1,13 @@
+autopep8==1.6.0
+multipledispatch==0.6.0
+pycodestyle==2.8.0
+pygame==2.1.0
+pygame-menu==4.2.2
+pyperclip==1.8.2
+PyQt5==5.15.6
+PyQt5-Qt5==5.15.2
+PyQt5-sip==12.9.0
+screeninfo==0.8
+six==1.16.0
+toml==0.10.2
+typing_extensions==4.0.1
