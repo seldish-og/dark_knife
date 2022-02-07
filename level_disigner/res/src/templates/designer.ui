@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>798</width>
-    <height>760</height>
+    <width>1018</width>
+    <height>755</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -155,7 +155,7 @@
                    <string notr="true">color: #07CAF2;</string>
                   </property>
                   <property name="text">
-                   <string>TextLabel</string>
+                   <string>Textures</string>
                   </property>
                  </widget>
                 </item>
@@ -255,8 +255,8 @@ background-color: #07CAF2;</string>
               <rect>
                <x>0</x>
                <y>0</y>
-               <width>201</width>
-               <height>677</height>
+               <width>170</width>
+               <height>684</height>
               </rect>
              </property>
              <property name="sizePolicy">
@@ -341,13 +341,155 @@ background-color: #07CAF2;</string>
      </widget>
     </item>
     <item>
-     <widget class="QFrame" name="grid_frame">
+     <widget class="QFrame" name="right_bar">
       <property name="frameShape">
        <enum>QFrame::StyledPanel</enum>
       </property>
       <property name="frameShadow">
        <enum>QFrame::Raised</enum>
       </property>
+      <layout class="QVBoxLayout" name="verticalLayout_5">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item alignment="Qt::AlignHCenter|Qt::AlignTop">
+        <widget class="QFrame" name="setting_bar">
+         <property name="styleSheet">
+          <string notr="true"/>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_6">
+          <item>
+           <widget class="QLabel" name="lable_widht">
+            <property name="font">
+             <font>
+              <pointsize>14</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color: #fff;</string>
+            </property>
+            <property name="text">
+             <string>width:</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="line_edit__width">
+            <property name="font">
+             <font>
+              <pointsize>14</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color: #fff;</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="lable_height">
+            <property name="font">
+             <font>
+              <pointsize>14</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color: #fff;</string>
+            </property>
+            <property name="text">
+             <string>height:</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="line_edit_height">
+            <property name="font">
+             <font>
+              <pointsize>14</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color: #fff;</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label">
+            <property name="font">
+             <font>
+              <pointsize>14</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color: #fff;</string>
+            </property>
+            <property name="text">
+             <string>cell:</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="line_edit_cell">
+            <property name="font">
+             <font>
+              <pointsize>14</pointsize>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color: #fff;</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="set_background">
+            <property name="styleSheet">
+             <string notr="true">color: #fff;
+border: 1px solid #fff;
+padding: 6.5px;
+</string>
+            </property>
+            <property name="text">
+             <string>set background</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QFrame" name="grid_frame">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+        </widget>
+       </item>
+      </layout>
      </widget>
     </item>
    </layout>
@@ -357,7 +499,7 @@ background-color: #07CAF2;</string>
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>798</width>
+     <width>1018</width>
      <height>21</height>
     </rect>
    </property>
@@ -403,8 +545,6 @@ QAction:selected {
    </property>
   </action>
  </widget>
- <resources>
-  <include location="../../../../../../Desktop/resource.qrc"/>
- </resources>
+ <resources/>
  <connections/>
 </ui>

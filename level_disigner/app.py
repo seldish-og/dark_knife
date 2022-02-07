@@ -4,16 +4,16 @@ from controller import MainViewController
 
 
 def main():
-	app = QApplication(sys.argv)
+    app = QApplication(sys.argv)
 
-	MainViewController()
+    MainViewController()
 
-	app.exec()
+    app.exec()
 
 
 def start():
-	if __name__ == '__main__':
-		sys.exit(main())
+    if __name__ == '__main__':
+        sys.exit(main())
 
 
 start()

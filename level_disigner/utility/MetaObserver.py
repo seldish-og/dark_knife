@@ -3,6 +3,6 @@ from abc import ABC, abstractmethod
 
 class MetaObserver(ABC):
 
-	@abstractmethod
-	def change(self):
-		pass
+    @abstractmethod
+    def change(self):
+        pass

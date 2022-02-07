@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'c:\Users\79533\Documents\dark_knife\level_disigner\res\src\templates\designer.ui'
+# Form implementation generated from reading ui file 'c:\Users\79533\dark_knife\level_disigner\res\src\templates\designer.ui'
 #
 # Created by: PyQt5 UI code generator 5.15.6
 #
@@ -14,7 +14,7 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(798, 760)
+        MainWindow.resize(1018, 755)
         MainWindow.setStyleSheet("background-color: #111E2E;")
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
@@ -82,10 +82,10 @@ class Ui_MainWindow(object):
         self.header_add_button = QtWidgets.QPushButton(self.header_button_frame)
         self.header_add_button.setAutoFillBackground(False)
         self.header_add_button.setStyleSheet("border: none;\n"
-"border-color: none;\n"
-"outline: none;\n"
-"color: #07CAF2;\n"
-"")
+                                             "border-color: none;\n"
+                                             "outline: none;\n"
+                                             "color: #07CAF2;\n"
+                                             "")
         self.header_add_button.setText("")
         icon = QtGui.QIcon()
         icon.addPixmap(QtGui.QPixmap(":/icons/add-icon.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
@@ -102,7 +102,7 @@ class Ui_MainWindow(object):
         sizePolicy.setHeightForWidth(self.line_2.sizePolicy().hasHeightForWidth())
         self.line_2.setSizePolicy(sizePolicy)
         self.line_2.setStyleSheet("color: #07CAF2;\n"
-"background-color: #07CAF2;")
+                                  "background-color: #07CAF2;")
         self.line_2.setLineWidth(2)
         self.line_2.setFrameShape(QtWidgets.QFrame.HLine)
         self.line_2.setFrameShadow(QtWidgets.QFrame.Sunken)
@@ -114,7 +114,7 @@ class Ui_MainWindow(object):
         self.textures_scroll_area.setWidgetResizable(True)
         self.textures_scroll_area.setObjectName("textures_scroll_area")
         self.textures_frame_layout = QtWidgets.QWidget()
-        self.textures_frame_layout.setGeometry(QtCore.QRect(0, 0, 201, 677))
+        self.textures_frame_layout.setGeometry(QtCore.QRect(0, 0, 170, 684))
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Expanding)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
@@ -145,33 +145,104 @@ class Ui_MainWindow(object):
         self.verticalLayout.setObjectName("verticalLayout")
         self.line = QtWidgets.QFrame(self.line_frame)
         self.line.setStyleSheet("color: #07CAF2;\n"
-"background-color: #07CAF2;")
+                                "background-color: #07CAF2;")
         self.line.setFrameShape(QtWidgets.QFrame.VLine)
         self.line.setFrameShadow(QtWidgets.QFrame.Sunken)
         self.line.setObjectName("line")
         self.verticalLayout.addWidget(self.line)
         self.horizontalLayout.addWidget(self.line_frame, 0, QtCore.Qt.AlignRight)
         self.horizontalLayout_2.addWidget(self.frame)
-        self.grid_frame = QtWidgets.QFrame(self.centralwidget)
+        self.right_bar = QtWidgets.QFrame(self.centralwidget)
+        self.right_bar.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.right_bar.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.right_bar.setObjectName("right_bar")
+        self.verticalLayout_5 = QtWidgets.QVBoxLayout(self.right_bar)
+        self.verticalLayout_5.setContentsMargins(0, 0, 0, 0)
+        self.verticalLayout_5.setSpacing(0)
+        self.verticalLayout_5.setObjectName("verticalLayout_5")
+        self.setting_bar = QtWidgets.QFrame(self.right_bar)
+        self.setting_bar.setStyleSheet("")
+        self.setting_bar.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.setting_bar.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.setting_bar.setObjectName("setting_bar")
+        self.horizontalLayout_6 = QtWidgets.QHBoxLayout(self.setting_bar)
+        self.horizontalLayout_6.setObjectName("horizontalLayout_6")
+        self.lable_widht = QtWidgets.QLabel(self.setting_bar)
+        font = QtGui.QFont()
+        font.setPointSize(14)
+        self.lable_widht.setFont(font)
+        self.lable_widht.setStyleSheet("color: #fff;")
+        self.lable_widht.setObjectName("lable_widht")
+        self.horizontalLayout_6.addWidget(self.lable_widht)
+        self.line_edit__width = QtWidgets.QLineEdit(self.setting_bar)
+        font = QtGui.QFont()
+        font.setPointSize(14)
+        self.line_edit__width.setFont(font)
+        self.line_edit__width.setStyleSheet("color: #fff;")
+        self.line_edit__width.setObjectName("line_edit__width")
+        self.horizontalLayout_6.addWidget(self.line_edit__width)
+        self.lable_height = QtWidgets.QLabel(self.setting_bar)
+        font = QtGui.QFont()
+        font.setPointSize(14)
+        self.lable_height.setFont(font)
+        self.lable_height.setStyleSheet("color: #fff;")
+        self.lable_height.setObjectName("lable_height")
+        self.horizontalLayout_6.addWidget(self.lable_height)
+        self.line_edit_height = QtWidgets.QLineEdit(self.setting_bar)
+        font = QtGui.QFont()
+        font.setPointSize(14)
+        self.line_edit_height.setFont(font)
+        self.line_edit_height.setStyleSheet("color: #fff;")
+        self.line_edit_height.setObjectName("line_edit_height")
+        self.horizontalLayout_6.addWidget(self.line_edit_height)
+        self.label = QtWidgets.QLabel(self.setting_bar)
+        font = QtGui.QFont()
+        font.setPointSize(14)
+        self.label.setFont(font)
+        self.label.setStyleSheet("color: #fff;")
+        self.label.setObjectName("label")
+        self.horizontalLayout_6.addWidget(self.label)
+        self.line_edit_cell = QtWidgets.QLineEdit(self.setting_bar)
+        font = QtGui.QFont()
+        font.setPointSize(14)
+        self.line_edit_cell.setFont(font)
+        self.line_edit_cell.setStyleSheet("color: #fff;")
+        self.line_edit_cell.setObjectName("line_edit_cell")
+        self.horizontalLayout_6.addWidget(self.line_edit_cell)
+        self.set_background = QtWidgets.QPushButton(self.setting_bar)
+        self.set_background.setStyleSheet("color: #fff;\n"
+                                          "border: 1px solid #fff;\n"
+                                          "padding: 6.5px;\n"
+                                          "")
+        self.set_background.setObjectName("set_background")
+        self.horizontalLayout_6.addWidget(self.set_background)
+        self.verticalLayout_5.addWidget(self.setting_bar, 0, QtCore.Qt.AlignHCenter | QtCore.Qt.AlignTop)
+        self.grid_frame = QtWidgets.QFrame(self.right_bar)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Expanding)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.grid_frame.sizePolicy().hasHeightForWidth())
+        self.grid_frame.setSizePolicy(sizePolicy)
         self.grid_frame.setFrameShape(QtWidgets.QFrame.StyledPanel)
         self.grid_frame.setFrameShadow(QtWidgets.QFrame.Raised)
         self.grid_frame.setObjectName("grid_frame")
-        self.horizontalLayout_2.addWidget(self.grid_frame)
+        self.verticalLayout_5.addWidget(self.grid_frame)
+        self.horizontalLayout_2.addWidget(self.right_bar)
         MainWindow.setCentralWidget(self.centralwidget)
         self.menuBar = QtWidgets.QMenuBar(MainWindow)
-        self.menuBar.setGeometry(QtCore.QRect(0, 0, 798, 21))
+        self.menuBar.setGeometry(QtCore.QRect(0, 0, 1018, 21))
         self.menuBar.setStyleSheet("color: #fff; border-bottom: 1px solid #fff;")
         self.menuBar.setObjectName("menuBar")
         self.menufile = QtWidgets.QMenu(self.menuBar)
         self.menufile.setContextMenuPolicy(QtCore.Qt.PreventContextMenu)
         self.menufile.setStyleSheet("QAction {\n"
-"    color: #fff; \n"
-"}\n"
-"\n"
-"QAction:selected {\n"
-"    background-color: #fff;\n"
-"}\n"
-"")
+                                    "    color: #fff; \n"
+                                    "}\n"
+                                    "\n"
+                                    "QAction:selected {\n"
+                                    "    background-color: #fff;\n"
+                                    "}\n"
+                                    "")
         self.menufile.setObjectName("menufile")
         MainWindow.setMenuBar(self.menuBar)
         self.actionopen = QtWidgets.QAction(MainWindow)
@@ -191,10 +262,12 @@ class Ui_MainWindow(object):
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
-        self.header_title.setText(_translate("MainWindow", "TextLabel"))
+        self.header_title.setText(_translate("MainWindow", "Textures"))
+        self.lable_widht.setText(_translate("MainWindow", "width:"))
+        self.lable_height.setText(_translate("MainWindow", "height:"))
+        self.label.setText(_translate("MainWindow", "cell:"))
+        self.set_background.setText(_translate("MainWindow", "set background"))
         self.menufile.setTitle(_translate("MainWindow", "file"))
         self.actionopen.setText(_translate("MainWindow", "open"))
         self.actionsave.setText(_translate("MainWindow", "save"))
         self.actionsave_as.setText(_translate("MainWindow", "save as"))
-
-from ..img import res

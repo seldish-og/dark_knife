@@ -1,2 +1,2 @@
 class Cell:
-	side = 20
+    side = 20
